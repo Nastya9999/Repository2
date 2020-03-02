@@ -1,0 +1,10 @@
+
+RewriteEngine on
+RewriteBase /php-30:81/(addres)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-D
+RewriteRule (.*) /index.php [END]
+RewriteRule (.*) /index.php ? route=$1 [QSA, L]
+
+
+#Изменим index.php

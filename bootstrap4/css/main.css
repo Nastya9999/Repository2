@@ -1,0 +1,17 @@
+img {
+    width: 75%;
+    height: 60%;
+    display: block;
+    object-fit: cover;
+}
+btn btn-info{
+    cursor: pointer;
+}
+.btn {
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #6610f2; /* Серый цвет фона */
+    color: #007bff; /* Белый цвет текста */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 3px; /* Скругляем уголки */
+}
