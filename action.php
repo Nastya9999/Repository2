@@ -17,6 +17,7 @@ if(isset($_POST["go"])){
     if(!filter_var($_SESSION['login'],FILTER_VALIDATE_EMAIL)){
         $error[]="Login({$_SESSION['login']})-некорректно";
         $_SESSION["alert"]="alert-danger";
+        echo"HELLO!";
     }
     if($stmt->rowCount()>0){
         $error[]="Данный пароль уже имеется в БД!!!\n";
